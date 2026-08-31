@@ -1,3 +1,5 @@
-**Helmet Detection ATM — AI-Powered Helmet Compliance Monitoring with Streamlit**
+# 🪖 Helmet Detection ATM App
 
-If you give me your **actual `app.py` and project files**, I can also create a README that exactly matches your implementation—covering the **model, classes, installation commands, screenshots, architecture, Streamlit UI, and deployment instructions** rather than using generic placeholders.
+A real-time **Helmet Detection Application** built with **Python, Streamlit, and Computer Vision**.
+
+The application detects whether a person riding a motorcycle is wearing a helmet. It can be used as a prototype for **ATM/security-camera monitoring, traffic safety systems, workplace safety, and automated surveillance**.
