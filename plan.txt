@@ -1,0 +1,9 @@
+streamlit --> UI ---> photo, video, camera ---> read(Frame/Image)
+
+frame/Image ---> detection_service --> helmet detection ---> yolo custom trained model ---> detection result
+
+
+detection result ---> helmet or no helmet ----> if helmet ---> play beeping sound
+
+this play beeping sound is a part of application. In real case, it can be used as just blocking gate until it can detect helmet being opened or also can make as such that ATM only opens or ATM locks when rider takes helmet off or even call security guard.
+
