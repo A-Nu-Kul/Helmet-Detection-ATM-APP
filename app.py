@@ -89,7 +89,7 @@ def process_video(video_file_path):
                 st.success("No Helmet! Head or Cap detected")    
             
         #Display video frame
-        stframe.image(frame, channels="BGR", width="stretch")
+        stframe.image(frame, channels="BGR", use_container_width=True)
     cap.release()
  
  
@@ -117,7 +117,7 @@ def process_camera(camera_source):
             #If nothing is detected
             else:
                 st.success("No helmet/Head detected")      
-        stframe.image(frame, channels="BGR", width="stretch")
+        stframe.image(frame, channels="BGR", use_container_width=True)
     cap.release()
  
  
@@ -130,7 +130,7 @@ if input_type == "Image":
         image = cv2.imdecode(np_array, cv2.IMREAD_COLOR)
  
         processed_image = process_image(image)
-        st.image(processed_image, channels="BGR", width="stretch")
+        st.image(processed_image, channels="BGR", use_container_width=True)
  
  
 if input_type == "Video":
