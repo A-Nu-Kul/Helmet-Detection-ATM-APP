@@ -12,10 +12,10 @@ class DetectionService:
         results = self.model(frame)[0]
 
         detections_classes = []
-        for result in results.bboxes.data.tolist():
+        for result in results.boxes.data.tolist():
             x1, y1, x2, y2, score, class_id = result
 
-            if score>= DETECTION_THRESHOLD:
+            if score >= DETECTION_THRESHOLD:
                 class_name = self.class_names[int(class_id)]    
                 detections_classes.append(class_name)
 
